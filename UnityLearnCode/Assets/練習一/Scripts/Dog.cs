@@ -4,13 +4,23 @@ public class Dog
 {
     #region 欄位
     public string name;
-    public float weight;
+    private float weight;
     public string type;
-    public string sex;
+    private string sex;
     public string color;
-    public int age;
+    private int age;
     #endregion
-
+    #region 建構式函數
+    public Dog(string name, float weight, string type,string sex, string color,int age)
+    {
+        //this.name = name;
+        this.weight = weight;
+        //this.type = type;
+        this.sex = sex;
+        //this.color = color;
+        this.age = age; 
+    }
+    #endregion
     #region 方法
     /// <summary>
     /// 狗叫的方法
