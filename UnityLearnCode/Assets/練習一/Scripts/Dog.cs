@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+[System .Serializable ]
 public class Dog
 {
     #region 欄位
@@ -26,8 +27,6 @@ public class Dog
     {
         return age * 7;
     }
-    #endregion
-    #region
     /// <summary>
     /// 狗吃飯的方法
     /// </summary>
@@ -37,6 +36,11 @@ public class Dog
     {
         Debug.Log(name + ":" + food + ",速度:" + speed);   
     }
+    /// <summary>
+    /// 狗吃飯的方法
+    /// </summary>
+    /// <param name="food"></param>
+    /// <param name="count"></param>
     public void Eat(string food, int count)
     {
         Debug.Log(name + ":" + food + ",份量:" + count);
